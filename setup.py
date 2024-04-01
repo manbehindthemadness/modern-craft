@@ -1,6 +1,6 @@
 from setuptools import setup, find_packages
 
-print('THIS PACHAGE REQUIRES OPENCV; HOWEVER, IT"S NOT GOING TO BE AUTOMATICALLY INSTALLED')
+print("THIS PACHAGE REQUIRES OPENCV; HOWEVER, IT'S NOT GOING TO BE AUTOMATICALLY INSTALLED")
 setup(
     name='mcraft',
     version='0.0.1',
