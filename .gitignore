@@ -2,3 +2,5 @@
 /images/
 /*.jpg
 /*.txt
+/build/
+/mcraft.egg-info/
