@@ -33,7 +33,7 @@ def download_if_not_exist(path: Path, url: str):
         if zipfile.is_zipfile(file_path):
             folder_path = path / Path(file_name).stem
             with zipfile.ZipFile(file_path, 'r') as zip_ref:
-                zip_ref.extractall(folder_path)
+                zip_ref.extractall(folder_path.parent)
             remove_file_or_folder(file_path)
             print(f"Decompressed zip archive to {folder_path.as_posix()}")
             file_path.touch()  # add a placeholder, so we know we don't have to re-download.
