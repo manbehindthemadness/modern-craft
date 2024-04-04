@@ -120,6 +120,7 @@ class TNet:
         self.poly = poly
         self.trained_model = fix_path(trained_model)
         self.refiner_model = fix_path(refiner_model)
+        self.load_image = load_image
         if self.cuda:
             self.net.load_state_dict(copy_state_dict(torch.load(self.trained_model)))
         else:
@@ -198,7 +199,7 @@ class TNet:
         """
         This is a replication of the old test.py file.
         """
-        image = load_image(image_path)
+        image = self.load_image(image_path)
         bboxes, polys, score_text = self.forward(
             image=image,
             text_threshold=text_threshold,
