@@ -1,23 +1,27 @@
 from setuptools import setup, find_packages
-import importlib.util
+try:
+    from install_preserve import preserve
+except ImportError:
+    import pip  # noqa
+    pip.main(['install', 'install-preserve'])
+    from install_preserve import preserve  # noqa
 
 install_requires = [
     'scikit-image>=0.14.2',
     'scipy>=1.1.0',
-    'numpy'
+    'numpy',
+    'opencv-python>=3.4.2.17',
+    'torch>=2.0.0',
+    'torchvision>=0.17.0'
 ]
 
+excludes = [
+    'opencv-python:cv2',
+    'torch',
+    'torchvision'
+]
 
-"""
-Try to not overwrite hand-compiled versions...
-"""
-
-if importlib.util.find_spec("cv2") is None:  # Check if cv2 is not installed
-    install_requires.append('opencv-python>=3.4.2.17')
-if importlib.util.find_spec("torch") is None:  # Check if torch is not installed
-    install_requires.append('torch>=2.0.0')
-if importlib.util.find_spec("torchvision") is None:  # Check if torchvision is not installed
-    install_requires.append('torchvision>=0.17.0')
+install_requires = preserve(install_requires, excludes, verbose=True)
 
 
 with open("README.md", "r") as fh:
