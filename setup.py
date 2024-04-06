@@ -20,6 +20,10 @@ if importlib.util.find_spec("torchvision") is None:  # Check if torchvision is n
     install_requires.append('torchvision>=0.17.0')
 
 
+with open("README.md", "r") as fh:
+    long_description = fh.read()
+
+
 setup(
     name='mcraft',
     version='0.0.1',
@@ -32,6 +36,7 @@ setup(
     author='Manbehindthemadness',
     author_email='manbehindthemadness@gmail.com',
     description='A modern version of CRAFT-pytorch using the latest versions',
+    long_description=long_description,
     long_description_content_type='text/markdown',
     url='https://github.com/manbehindthemadness/modern-craft',
     classifiers=[
