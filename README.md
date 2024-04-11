@@ -54,3 +54,7 @@ pip install modern-craft
 - The necessary model files (`craft_mlt_25k.pth` and `craft_refiner_CTW1500.pth`) will be downloaded to ~/.cache/mcraft.
 - GPU operations, whilst implemented, remain untested until I get back from abroad and regain access to my compute systems.
 - Official CRAFT PyTorch [repository](https://github.com/clovaai/CRAFT-pytorch)
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
