@@ -42,6 +42,8 @@ pip install modern-craft
     
     # After running test, the result will be saved as "res_image_mask.jpg" in the same directory as the input image
 ```
+![res_cover_mask](https://github.com/manbehindthemadness/modern-craft/assets/24589462/6b3160a4-9223-42de-b5a6-5351ebd0ffff)
+
 
 ## Features
 - Text detection in images produced as heat-maps bounding boxes and per-character polygons.
@@ -51,3 +53,4 @@ pip install modern-craft
 - Preexisting or hand compiled instances of opencv, pytorch, and torchvision will **not** be replaced during setup.
 - The necessary model files (`craft_mlt_25k.pth` and `craft_refiner_CTW1500.pth`) will be downloaded to ~/.cache/mcraft.
 - GPU operations, whilst implemented, remain untested until I get back from abroad and regain access to my compute systems.
+- Official CRAFT PyTorch [repository](https://github.com/clovaai/CRAFT-pytorch)
