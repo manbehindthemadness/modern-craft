@@ -29,7 +29,7 @@ with open("README.md", "r") as fh:
 
 
 setup(
-    name='mcraft',
+    name='modern-craft',
     version='0.0.1',
     packages=find_packages(),
     install_requires=install_requires,
