@@ -20,7 +20,7 @@ You can install the library via pip:
 
 
 ```
-pip install modern-craft
+pip install mcraft
 ```
 
 ## Usage
