@@ -12,7 +12,7 @@ install_requires = [
     'numpy',
     'opencv-python>=3.4.2.17',
     'torch>=2.0.0',
-    'torchvision>=0.17.0'
+    'torchvision>=0.17.0',
     'quickdl',
 ]
 
