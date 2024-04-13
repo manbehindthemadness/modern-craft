@@ -13,6 +13,7 @@ install_requires = [
     'opencv-python>=3.4.2.17',
     'torch>=2.0.0',
     'torchvision>=0.17.0'
+    'quickdl',
 ]
 
 excludes = [
@@ -30,7 +31,7 @@ with open("README.md", "r") as fh:
 
 setup(
     name='mcraft',
-    version='0.0.1',
+    version='0.0.2',
     packages=find_packages(),
     install_requires=install_requires,
     entry_points={
