@@ -33,7 +33,7 @@ with open("README.md", "r") as fh:
 
 setup(
     name='mcraft',
-    version='0.0.3',
+    version='0.0.4a',
     packages=find_packages(),
     install_requires=install_requires,
     entry_points={
