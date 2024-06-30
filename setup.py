@@ -20,7 +20,6 @@ install_requires = [
 
 excludes = [
     'opencv-python:cv2',
-    'opencv_python:cv2',
     'torch',
     'torchvision'
 ]
