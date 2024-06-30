@@ -14,10 +14,13 @@ install_requires = [
     'torch>=2.0.0',
     'torchvision>=0.17.0',
     'quickdl',
+    'tqdm',
+
 ]
 
 excludes = [
     'opencv-python:cv2',
+    'opencv_python:cv2',
     'torch',
     'torchvision'
 ]
