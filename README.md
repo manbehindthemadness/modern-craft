@@ -5,6 +5,8 @@ This Python library provides an interface for using the CRAFT (Character Region 
 
 This is an adaptation of the CRAFT-python library allowing for use on modern packages (pytorch 2 > opencv-python > 3.4).
 
+GPU (CUDA) Acceleration has now been tested.
+
 ## ToDo
 This library will need refactoring with respect to performance as the previous library introduced unneeded overhead.
 
